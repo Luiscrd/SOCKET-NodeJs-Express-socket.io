@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Socket Client</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-evenly align-items-center titulo">
+        <img src="./images/nodejsb.png" alt="Node" class="logo-node">
+        <p class="titulo-node">Socket Client</p>
+        <img src="./images/exp.png" alt="Node" class="logo-ex">
+    </div>
+    <div class="cuerpo">
+        <img src="./images/nodejs-ex-logo.png" alt="Rest" class="logo-node-ex">
+        <!-- <div class="cuerpo-enlace">
+            <a href="https://expressjs.com/en/guide/routing.html" class="enlace" target="_blank">Guide Express</a>
+            <br>
+            <a href="/api" class="enlace">API - REST</a>
+            <br>
+            <button id="btn-login">Logout</button>
+        </div> -->
+        <div class="row d-flex flex-column align-items-center justify-content-center">
+            <div class="col-6 align-items-center">
+                <input type="text" name="txtMensaje" id="txtMensaje" class="form-control">
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <button id="btn-login">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <span class="by">By: <a href="https://github.com/Luiscrd" target="_blank" class="tex-lc">LcrPrograming</a></span>
+    <span id="conect">Server status: <samp class="tex-online">Online</samp></span>
+    <span id="disconect">Server status: <span class="tex-ofline">Ofline</span></span>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/socket-client.js"></script>
+    
+</body>
+
+</html>
